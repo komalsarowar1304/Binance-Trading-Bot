@@ -3,9 +3,8 @@ from binance.client import Client
 from binance.enums import *
 
 # API Credentials from your Binance Testnet Account
-API_KEY = 'DMkdgCpvWz83Z3ennYpBPrsBddzQvHjaL9yqACNsNujIflZGbEuEwDMj9fGcx7wG'
-SECRET_KEY = 'yUaoYbU3VpE1dKiZN9boYjBqN2QvwfhuHycmYyHhM5DVCPm6jhvFsYJ6ZkioTtEQ'
-
+API_KEY = "PLACE_YOUR_API_KEY_HERE"
+SECRET_KEY = "PLACE_YOUR_SECRET_KEY_HERE"
 # Logging Setup: This will record all API requests and responses
 logging.basicConfig(
     filename='trading_bot.log', 
@@ -82,4 +81,5 @@ if __name__ == "__main__":
 
         bot.place_order(symbol_input, side_input, type_input, qty_input, price_input)
     except KeyboardInterrupt:
+
         print("\nBot stopped by user.")
